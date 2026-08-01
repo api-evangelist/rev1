@@ -1,7 +1,29 @@
 aid: rev1
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/rev1.png
 name: Rev1
-description: Rev1 is a company surfaced as a portfolio company of y-combinator and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Rev1 (REV1, Inc.) is a Y Combinator (Winter 2026) startup building an
+  AI-powered platform that automatically converts 3D CAD models into fully
+  annotated, production-ready 2D manufacturing drawings in minutes instead of
+  hours. The software applies ASME Y14.5-2018 geometric dimensioning and
+  tolerancing (GD&T) standards, captures design intent, and lets mechanical
+  engineers review the design rationale before sharing with manufacturers,
+  reportedly recovering roughly 25% of engineering time at hardware companies
+  across robotics, aerospace, automotive, medical devices, and consumer
+  electronics. As of this enrichment pass the company exposes only a marketing
+  site and a demo-request flow — there is no public API, developer portal, SDK,
+  or documentation surface to catalog.
 url: https://raw.githubusercontent.com/api-evangelist/rev1/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,12 +33,38 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
+- Manufacturing
+- CAD
+- Mechanical Engineering
+- Artificial Intelligence
+- Engineering Drawings
+- GD&T
+- Hardware
+- Y Combinator
 apis: []
+common:
+- type: DomainSecurity
+  url: security/rev1-domain-security.yml
+- type: Website
+  url: https://rev1.so
+- type: Demo
+  url: https://rev1.so/demo
+- type: LinkedIn
+  url: https://www.linkedin.com/company/rev1-inc/
+- type: Twitter
+  url: https://x.com/REV1_Inc
+- type: YouTube
+  url: https://www.youtube.com/@REV1_inc
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
